@@ -26,7 +26,7 @@ import {XkcdResponse} from "~/models/xkcdResponse";
 export default class XkcdViewer extends Vue {
 
   xkcd: Xkcd = {} as Xkcd;
-  newNumber?: Number;
+  newNumber: number = 0;
   isPlaying: boolean = false;
   timeout: number = 8000;
 
