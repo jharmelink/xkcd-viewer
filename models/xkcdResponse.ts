@@ -1,11 +1,5 @@
-export interface XkcdResponse{
-    "data": {
-        number: number,
-        url: string,
-        title: string,
-        description: string,
-        year: number,
-        month: number,
-        day: number
-    }
+import {Xkcd} from "~/models/xkcd";
+
+export interface XkcdResponse {
+    xkcd: Xkcd
 }

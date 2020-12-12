@@ -1,0 +1,87 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: "Andale Mono", serif;
+    text-transform: uppercase;
+}
+
+input, button {
+    position: relative;
+    margin: 2px;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: #444444;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+button {
+    background-color: #eeeeee;
+    padding: 5px 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+button.timer {
+    background-image: url(../assets/timer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+}
+
+button:active, button.active {
+    background-color: brown;
+}
+
+input {
+    padding: 0 6px;
+    background-color: #ffffff;
+    width: 100px;
+}
+
+button:after {
+    left: 50%;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+    content: "";
+    width: 0;
+    bottom: 0;
+    height: 3px;
+    background: #444444;
+}
+
+button:hover {
+    animation: rotate 0.7s ease-in-out both;
+    cursor: pointer;
+}
+
+button:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}

@@ -7,5 +7,16 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "start": "nuxt start"
+  },
+  "dependencies": {
+    "graphql": "^15.4.0",
+    "graphql-request": "^3.3.0",
+    "nuxt": "^2.14.10",
+    "nuxt-property-decorator": "^2.8.8"
+  },
+  "devDependencies": {
+    "@nuxt/types": "~2.14.0",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/eslint-config-typescript": "^5.0.0"
   }
 }

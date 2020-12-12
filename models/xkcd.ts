@@ -1,11 +1,10 @@
-export interface XkcdResponse{
-    "data": {
-        number: number,
-        url: string,
-        title: string,
-        description: string,
-        year: number,
-        month: number,
-        day: number
-    }
+export interface Xkcd {
+    number: number,
+    url: string,
+    filename: string,
+    title: string,
+    description: string,
+    year: number,
+    month: number,
+    day: number
 }
